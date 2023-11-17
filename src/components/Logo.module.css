@@ -1,0 +1,10 @@
+.logo {
+  width: 140px;
+  align-self: center;
+}
+
+@media screen and (width <=600px) { 
+  .logo {
+    width: 130px;
+  }
+}

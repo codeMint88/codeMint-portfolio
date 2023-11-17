@@ -1,0 +1,15 @@
+.paragraph {
+  height: 9rem;
+  width: fit-content;
+}
+
+@media screen and (width <=1080px) {
+  .paragraph {
+    height: clamp(6rem, 3vh, 5rem);
+  }
+}
+@media screen and (width <= 600px) {
+  .paragraph {
+    height: 6rem;
+  }
+}

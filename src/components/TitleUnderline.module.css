@@ -1,0 +1,41 @@
+.titleContainer {
+  /* border: var(--border);   */
+  width: fit-content;
+}
+
+.titleContainer h1 {
+  color: var(--colour-green);
+  font-size: clamp(1.02rem, 3vw, 1.4rem);
+}
+
+.underline {
+  width: 40%;
+  height: 0.3rem;
+  background-color: var(--colour-green);
+  position: relative;
+  border-radius: 20px 0 0 20px;
+  margin: 0.3rem 0 0.9rem 0;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 0.15rem;
+  background-color: var(--colour-green);
+  left: 80%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media screen and (width <= 600px) {
+  .titleContainer h1 {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (width <= 320px) {
+  .titleContainer h1 {
+    font-size: 0.7rem;
+  }
+}

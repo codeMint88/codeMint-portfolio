@@ -1,0 +1,28 @@
+.navPicContainer {
+  display: grid;
+  place-items: center;
+  width: fit-content;
+  isolation: isolate;
+}
+
+
+.navPicContainer > * {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+
+.pie {
+  animation: pie_spin infinite 20s linear;
+}
+
+@keyframes pie_spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
