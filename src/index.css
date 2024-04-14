@@ -38,6 +38,7 @@
 }
 
 html {
+  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
 
@@ -87,6 +88,7 @@ a:focus {
   outline: none;
 }
 
+
 button:active,
 button:focus {
   outline: none;
@@ -111,6 +113,7 @@ textarea,
 select {
   font: inherit;
   color: inherit;
+  border: none;
 }
 
 main {

@@ -1,0 +1,36 @@
+.navFixedContainer {
+  background: rgba(0, 0, 0, 0.3);
+  width: max-content;
+  padding: 0.7rem 1.7rem;
+  z-index: 9999;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(15px);
+  /* transition: var(--transition); */
+}
+
+
+.navFixedContainer a {
+  background-attachment: transparent;
+  padding: 0.9rem;
+  border-radius: 50%;
+  color: var(--green-gray-bg);
+  display: flex;
+  font-size: 1.1rem;
+  transition: var(--transition)
+}
+
+.navFixedContainer a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.navFixedContainer a.active {
+  background: var(--green-gray-bg);
+  color: var(--color-black1);
+}

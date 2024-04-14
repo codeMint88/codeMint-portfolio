@@ -1,8 +1,11 @@
+import ContactSection from "./ContactSection";
 import HeroSection from "./HeroSection";
 import Logo from "./Logo";
 import Main from "./Main";
 import Nav from "./Nav";
+import NavFixed from "./NavFixed";
 import NavPicture from "./NavPicture";
+import Parallex from "./Parallex";
 import SkillSection from "./SkillSection";
 
 function App() {
@@ -20,8 +23,11 @@ function App() {
         />
       </Nav>
       <Main>
+        <NavFixed />
         <HeroSection />
         <SkillSection />
+        <Parallex />
+        <ContactSection />
       </Main>
     </>
   );

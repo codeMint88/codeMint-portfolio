@@ -1,0 +1,64 @@
+.formContainer {
+  position: relative;
+}
+
+.phoneSvg {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.formContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formContainer input,
+.formContainer textarea {
+  padding: 1rem;
+  background-color: transparent;
+  border: 1px solid var(--colour-green);
+  border-radius: 8px;
+  /* outline: none; */
+}
+
+.formContainer input:focus,
+.formContainer textarea:focus {
+  outline-color: #f26b4d;
+}
+
+.btnContainer {
+  display: grid;
+  place-items: center;
+  width: fit-content;
+  isolation: isolate;
+}
+
+
+.btnContainer > * {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  transform: translateX(0.4rem);
+}
+
+.btnBackground {
+  background: var(--gradient-secondary);
+  /* z-index: 1; */
+  width: 107%;
+  height: 112%;
+  border-radius: 5px;
+}
+
+.formContainer button {
+  padding: 0.5rem 1rem 0.5rem;
+  /* border-radius: 5px; */
+  color: var(--primary-bg);
+  cursor: pointer;
+  background-color: transparent;
+  /* z-index: -3; */
+}

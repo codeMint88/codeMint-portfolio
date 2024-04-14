@@ -31,11 +31,20 @@ function HeroSection() {
         </div>
       </div>
       <div className={`${styles.heroRight} ${styles.gritItem}`}>
-        <div className={styles.heroImageContainer}>
+        <motion.div
+          initial={{ x: "100%", opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 200,
+            duration: 2,
+          }}
+          className={styles.heroImageContainer}
+        >
           <div className={styles.heroImageBg1}></div>
           <div className={styles.heroImageBg2}></div>
           <div className={styles.heroImage}></div>
-        </div>
+        </motion.div>
         <div className={styles.heroAboutMeContainer}>
           <p>
             Hey there, I'm ThankGod Enemuo, <br /> a product driven Full-Stack

@@ -4,6 +4,7 @@
   justify-content: space-between;
   padding: 3rem 0 3rem;
   gap: 3rem;
+  scroll-margin-top: 4.5rem;
 }
 
 .leftContainer {

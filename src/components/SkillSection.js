@@ -7,7 +7,7 @@ function SkillSection() {
   return (
     <div className={`container`}>
       <TitleUnderline title="Tech Stack and Experience" />
-      <div className={styles.skillSectionContainer}>
+      <div id="Skills" className={styles.skillSectionContainer}>
         <div className={styles.leftContainer}>
           <article className={styles.article}>
             <ELearning className={styles.icon} />

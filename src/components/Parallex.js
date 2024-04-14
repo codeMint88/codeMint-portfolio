@@ -1,11 +1,30 @@
+import { useRef } from "react";
 import styles from "./Parallex.module.css";
+import { motion, useScroll, useTransform } from "framer-motion";
+
 function Parallex() {
+  const ref = useRef();
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  });
+
+  const textYParallex = useTransform(scrollYProgress, [0, 1], ["0%", "500%"]);
+  const imageParallex = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+
   return (
-    <div className={styles.parallex_container}>
-      <h1>Completed Projects</h1>
-      <div className={styles.moutain}></div>
-      <div className={styles.planets}></div>
-      <div className={styles.moon}></div>
+    <div ref={ref} className={styles.parallex_container}>
+      <motion.h1 style={{ y: textYParallex }}>Completed Projects</motion.h1>
+      <motion.div className={styles.moutain}></motion.div>
+      <motion.div
+        style={{ y: imageParallex }}
+        className={styles.planets}
+      ></motion.div>
+      <motion.div
+        style={{ x: imageParallex }}
+        className={styles.moon}
+      ></motion.div>
     </div>
   );
 }
