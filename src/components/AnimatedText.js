@@ -1,12 +1,14 @@
 import { useState, useEffect } from "react";
 import styled, { keyframes } from "styled-components";
+// import { useInView } from "react-intersection-observer";
 
 function AnimatedText() {
   const fullStackArray = "Full-Stack".split("");
   const reactArray = "React".split("");
-  const backEnd = "Back-End".split("");
+  const backEndArray = "Back-End".split("");
   const [items, setItems] = useState(fullStackArray);
   const [count, setCount] = useState(0);
+  // const [ref, inView] = useInView({ threshold: 0.5 });
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -14,7 +16,7 @@ function AnimatedText() {
         setItems(reactArray);
         setCount((prevCount) => prevCount + 1);
       } else if (count === 1) {
-        setItems(backEnd);
+        setItems(backEndArray);
         setCount((prevCount) => prevCount + 1);
       } else if (count === 2) {
         setItems(fullStackArray);
@@ -23,7 +25,7 @@ function AnimatedText() {
     }, 6000);
 
     return () => clearInterval(timer);
-  }, [count, fullStackArray, backEnd, reactArray]);
+  }, [count, fullStackArray, backEndArray, reactArray]);
 
   return (
     <Wrapper>

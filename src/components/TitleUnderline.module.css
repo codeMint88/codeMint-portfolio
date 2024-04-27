@@ -1,41 +1,31 @@
 .titleContainer {
   /* border: var(--border);   */
   width: fit-content;
+  isolation: isolate;
 }
 
 .titleContainer h1 {
   color: var(--colour-green);
-  font-size: clamp(1.02rem, 3vw, 1.4rem);
+  font-size: clamp(0.875rem, 2vw + 0.25rem, 1.75rem);
 }
 
 .underline {
-  width: 40%;
-  height: 0.3rem;
-  background-color: var(--colour-green);
+  width: 1rem;
+  height: 1rem;
+  background-image: var(--gradient-primary);
   position: relative;
-  border-radius: 20px 0 0 20px;
-  margin: 0.3rem 0 0.9rem 0;
+  border-radius: 50%;
+  margin: 0.4rem 0 0.9rem 0;
 }
 
 .underline::after {
   content: "";
   position: absolute;
-  width: 70%;
-  height: 0.15rem;
-  background-color: var(--colour-green);
+  width: 700%;
+  height: 0.05rem;
+  background-image: var(--gradient-primary);
   left: 80%;
   top: 50%;
   transform: translateY(-50%);
-}
-
-@media screen and (width <= 600px) {
-  .titleContainer h1 {
-    font-size: 0.9rem;
-  }
-}
-
-@media screen and (width <= 320px) {
-  .titleContainer h1 {
-    font-size: 0.7rem;
-  }
+  z-index: -1;
 }

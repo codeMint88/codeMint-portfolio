@@ -1,7 +1,12 @@
 .heroSection {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 3rem 2rem 3rem;
+  padding: 3rem 2em 3rem;
+  border: 2px solid hsl(7, 97%, 57%);
+  background-color:hsl(34, 78%, 91%);
+  border-radius: 16px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .heroBtnContainer {
@@ -22,8 +27,12 @@
   background: var(--gradient-primary);
 }
 
+.heroLeft {
+  align-self: center;
+}
+
 .heroRight {
-  justify-self: center;
+  /* justify-self: center; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,7 +90,6 @@
 
 
 .heroAboutMeContainer h1 {
-  /* text-align: left; */
   font-weight: 900;
   background: var(--gradient-secondary);
   background-clip: text;
@@ -93,18 +101,17 @@
 }
 
 .heroAboutMeContainer span {
-  /* color: var(--color-black1); */
   background: var(--gradient-primary);
   background-clip: text;
   color: transparent;
 }
 
 
-@media screen and (width <= 1080px) {
+@media (width <= 1080px) {
   .heroSection {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 2rem;
+    padding: 2.5rem 2rem;
     gap: 2rem;
   }
 
@@ -122,34 +129,40 @@
 }
 
 
-@media screen and (width <= 600px) {
+@media (width <= 600px) {
+  .heroSection {
+    padding-block: 2rem;
+  }
+
   .heroBtnContainer {
     margin-top: 2.5rem;
   }
+
   .heroRight {
     flex-direction: column-reverse;
   }
 }
 
-@media screen and (width <= 360px) {
+@media (width <= 360px) {
   .heroSection {
-    padding: 2rem 1.5rem 2rem;
+    padding-inline: 1.5rem;
   }
+
   .heroBtnContainer {
     margin-top: 3rem;
   }
 }
 
-@media screen and (width <= 320px) {
-  .heroBtnContainer {
-    margin-top: 0.3rem;
-  }
-
+@media (width <= 320px) {
   .heroBtnContainer > * {
     padding: 0.7rem 1.3rem;
   }
 
   .heroSection {
-    padding-top: 1.3rem;
+    padding-top: 1.7rem;
+  }
+
+  p {
+    font-size: 0.73rem;
   }
 }

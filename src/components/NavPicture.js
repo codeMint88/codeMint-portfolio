@@ -21,13 +21,16 @@ function NavPicture({ pieSize, imgSize, colour1, colour2, colour3, colourbg }) {
     <div className={styles.navPicContainer}>
       <div style={pieStyle} className={styles.pie}></div>
       <figure style={imgStyle} className={styles.imgContainer}>
-        <img
-          src="/portfolio_img1-transformed.jpeg"
-          alt="Portfolio"
-          width="320"
-          height="280"
-        />
-        <figcaption class="sr-only"> Portfolio picture </figcaption>
+        <picture>
+          <source srcSet="/portfolio_img1-transformed.avif" type="image/avif" />
+          <img
+            src="/portfolio_img1-transformed.jpeg"
+            alt="Portfolio"
+            width="320"
+            height="280"
+          />
+        </picture>
+        <figcaption className="sr-only"> Portfolio picture </figcaption>
       </figure>
     </div>
   );
