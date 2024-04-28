@@ -71,7 +71,7 @@
 
   z-index: 2;
   height: calc(250px - 15px);
-  background: url("../../public/portfolio_img1-transformed.jpeg") no-repeat center top/cover;
+  background: url("/public/images/portfolio_img1-transformed.jpeg") no-repeat center top/cover;
   transform: rotate(-10deg);
   border-radius: 10px;
   overflow: hidden;

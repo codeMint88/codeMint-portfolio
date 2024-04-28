@@ -23,16 +23,16 @@ h1 {
 }
 
 .moutain {
-  background: url("/public/mountains.png");
+  background: url("/public/images/mountains.png");
   z-index: 3;
 }
 
 .planets {
-  background: url("/public/planets.png");
+  background: url("/public/images/planets.png");
   z-index: 2;
 }
 
 .moon {
-  background: url("/public/stars.png");
+  background: url("/public/images/stars.png");
   z-index: 1;
 }
