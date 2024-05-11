@@ -110,6 +110,10 @@ section {
   width: 100%;
 }
 
+main{
+  overflow-x: hidden;
+}
+
 /* Utility classes */
 
 .container {

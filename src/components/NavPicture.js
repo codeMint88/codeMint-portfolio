@@ -22,9 +22,12 @@ function NavPicture({ pieSize, imgSize, colour1, colour2, colour3, colourbg }) {
       <div style={pieStyle} className={styles.pie}></div>
       <figure style={imgStyle} className={styles.imgContainer}>
         <picture>
-          {/* <source srcSet="/portfolio_img1-transformed.avif" type="image/avif" /> */}
+          <source
+            srcSet="/codeMint-portfolio/images/portfolio_img1-transformed.avif"
+            type="image/avif"
+          />
           <img
-            src="/portfolio_img1-transformed.jpeg"
+            src="/codeMint-portfolio/images/portfolio_img1-transformed.jpeg"
             alt="Portfolio"
             width="320"
             height="280"

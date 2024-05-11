@@ -39,7 +39,12 @@ function ScrollToTop() {
       className={styles.goToTopBtn}
     >
       <figure className={styles.arrowContainer}>
-        <img src="arrow-up.png" alt="arrow-up" width="512" height="512" />
+        <img
+          src="/codeMint-portfolio/images/arrow-up.png"
+          alt="arrow-up"
+          width="512"
+          height="512"
+        />
         <figcaption class="sr-only"> arrow btn </figcaption>
       </figure>
     </button>
