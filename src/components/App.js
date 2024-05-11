@@ -23,12 +23,12 @@ function App() {
         />
       </Nav>
       <Main>
-        <NavFixed />
         <HeroSection />
         <SkillSection />
         <Parallex />
         <ContactSection />
       </Main>
+      <NavFixed />
     </>
   );
 }
