@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/codeMint-portfolio/static/css/main.481d5183.css",
-    "main.js": "/codeMint-portfolio/static/js/main.6c176cd5.js",
+    "main.css": "/codeMint-portfolio/static/css/main.f3a48bd9.css",
+    "main.js": "/codeMint-portfolio/static/js/main.3e822c0f.js",
     "static/media/mountains.png": "/codeMint-portfolio/static/media/mountains.6bceb498a0e1e0a70b47.png",
     "static/media/portfolio_img1-transformed.jpeg": "/codeMint-portfolio/static/media/portfolio_img1-transformed.3fc58986d7617bcc0dde.jpeg",
     "static/media/stars.png": "/codeMint-portfolio/static/media/stars.a979f6ed7ad00c7ea0b2.png",
     "static/media/planets.png": "/codeMint-portfolio/static/media/planets.827213af57ae82d007cd.png",
     "index.html": "/codeMint-portfolio/index.html",
-    "main.481d5183.css.map": "/codeMint-portfolio/static/css/main.481d5183.css.map",
-    "main.6c176cd5.js.map": "/codeMint-portfolio/static/js/main.6c176cd5.js.map"
+    "main.f3a48bd9.css.map": "/codeMint-portfolio/static/css/main.f3a48bd9.css.map",
+    "main.3e822c0f.js.map": "/codeMint-portfolio/static/js/main.3e822c0f.js.map"
   },
   "entrypoints": [
-    "static/css/main.481d5183.css",
-    "static/js/main.6c176cd5.js"
+    "static/css/main.f3a48bd9.css",
+    "static/js/main.3e822c0f.js"
   ]
 }
