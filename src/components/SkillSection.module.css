@@ -2,7 +2,7 @@
 .skillSectionContainer {
   display: flex;
   justify-content: space-between;
-  padding: 3rem 0 3rem;
+  padding: 1rem 0 3rem;
   gap: 3rem;
   scroll-margin-top: 4.5rem;
 }
@@ -148,7 +148,7 @@
 @media screen and (width <= 1080px) {
   .skillSectionContainer {
     flex-direction: column;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
   }
 
   .leftContainer {
@@ -157,9 +157,9 @@
 } 
 
 @media screen and (width <= 600px) {
-  .skillSectionContainer {
+  /* .skillSectionContainer {
     padding-top: 1.3rem;
-  }
+  } */
 
   .leftContainer {
     flex-direction: column;

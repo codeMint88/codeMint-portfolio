@@ -6,6 +6,7 @@ import Nav from "./Nav";
 import NavFixed from "./NavFixed";
 import NavPicture from "./NavPicture";
 import Parallex from "./Parallex";
+import ProjectSection from "./ProjectSection";
 import SkillSection from "./SkillSection";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <HeroSection />
         <SkillSection />
         <Parallex />
+        <ProjectSection />
         <ContactSection />
       </Main>
       <NavFixed />

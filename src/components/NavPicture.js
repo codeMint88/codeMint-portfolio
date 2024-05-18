@@ -13,8 +13,9 @@ function NavPicture({ pieSize, imgSize, colour1, colour2, colour3, colourbg }) {
     height: `${imgSize}px`,
     borderRadius: "50%",
     overflow: "hidden",
-    zIndex: "1",
+    zIndex: 1,
     border: `2px solid ${colourbg}`,
+    background: "var(--gradient-primary)",
   };
 
   return (
