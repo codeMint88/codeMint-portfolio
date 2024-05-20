@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
 import { useEffect, useRef } from "react";
 
-function RippleButton({ children, bgColour, colour }) {
+function RippleButton({ children, bgColour, colour, openModal }) {
   const rippleBtn = useRef(null);
 
   useEffect(() => {
@@ -44,7 +44,12 @@ function RippleButton({ children, bgColour, colour }) {
 
   return (
     <ButtonWrapper>
-      <Button ref={rippleBtn} bgColour={bgColour} colour={colour}>
+      <Button
+        ref={rippleBtn}
+        bgColour={bgColour}
+        colour={colour}
+        onClick={openModal}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 48 48"
@@ -104,7 +109,7 @@ const Button = styled.button`
   svg {
     margin-right: 4px;
     vartical-align: middle;
-    margin-bottom: 0.2rem;
+    ${"" /* margin-bottom: 0.2rem; */}
   }
 
   &:focus-visible {

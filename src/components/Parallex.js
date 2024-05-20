@@ -2,7 +2,7 @@ import { useRef } from "react";
 import styles from "./Parallex.module.css";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-function Parallex() {
+function Parallex({ title }) {
   const ref = useRef();
 
   const { scrollYProgress } = useScroll({
@@ -15,7 +15,7 @@ function Parallex() {
 
   return (
     <div ref={ref} className={styles.parallex_container}>
-      <motion.h1 style={{ y: textYParallex }}>Completed Projects</motion.h1>
+      <motion.h1 style={{ y: textYParallex }}>{title}</motion.h1>
       <motion.div className={styles.moutain}></motion.div>
       <motion.div
         style={{ y: imageParallex }}

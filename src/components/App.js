@@ -1,4 +1,5 @@
 import ContactSection from "./ContactSection";
+import FooterSection from "./FooterSection";
 import HeroSection from "./HeroSection";
 import Logo from "./Logo";
 import Main from "./Main";
@@ -26,9 +27,11 @@ function App() {
       <Main>
         <HeroSection />
         <SkillSection />
-        <Parallex />
+        <Parallex title="Completed Projects" />
         <ProjectSection />
+        <Parallex title="Let's Talk" />
         <ContactSection />
+        <FooterSection />
       </Main>
       <NavFixed />
     </>

@@ -1,27 +1,64 @@
+import { useState } from "react";
 import styled from "styled-components";
 // import Figure from "./Figure";
 import RippleButton from "./RippleButton";
 import StackItem from "./StackItem";
+import ReactModal from "react-modal";
+import { X } from "react-feather";
+import VissuallyHidden from "./VissuallyHidden";
 
-function ProjectItem() {
+const overlay = {
+  position: "fixed",
+  inset: 0,
+  backgroundColor: "rgba(0, 0, 0, 0.6)",
+  backdropFilter: "blur(3px)",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+};
+
+const content = {
+  inset: "revert",
+  position: "relative",
+  width: "70%",
+  backgroundColor: "white",
+  padding: "6rem",
+  borderRadius: "5px",
+  boxShadow: "0 3rem 5rem rgba(0, 0, 0, 0.3)",
+};
+
+function ProjectItem({ children }) {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const openModal = () => setModalIsOpen(true);
+  const closeModal = () => setModalIsOpen(false);
+
   return (
     <ItemWrapper>
-      {/* <FigureContainer>
-        <FigureWrapper>
-          <Figure
-            caption="Project 3 Image"
-            alt="Project Preview Image"
-            width="1080"
-            height="810"
-            srcSet="codeMint-portfolio/images/Project3_Preview_Image_L.avif"
-            src="codeMint-portfolio/images/Project3_Preview_Image_L.jpg"
-          />
-          <Overlay></Overlay>
-        </FigureWrapper>
-      </FigureContainer> */}
-      <RippleButton bgColour="" colour="--project1-ripplebtn-col">
+      <RippleButton
+        openModal={openModal}
+        bgColour=""
+        colour="--project1-ripplebtn-col"
+      >
         Preview
       </RippleButton>
+
+      <ReactModal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        contentLabel="Project Preview Modal"
+        style={{
+          overlay,
+          content,
+        }}
+      >
+        <Header>
+          <X onClick={closeModal} />
+          <VissuallyHidden title="Close Modal" />
+        </Header>
+        <ChildWrapper>{children}</ChildWrapper>
+      </ReactModal>
+
       <ProjectDetailsWrapper>
         <Name>Hackathon Project</Name>
         <Description>
@@ -36,31 +73,37 @@ function ProjectItem() {
           >
             <p>html</p>
           </StackItem>
+
           <StackItem
             stackImgSrc={`${process.env.PUBLIC_URL}/images/cssIcon.png`}
           >
             <p>css</p>
           </StackItem>
+
           <StackItem
             stackImgSrc={`${process.env.PUBLIC_URL}/images/htmlIcon.png`}
           >
             <p>html</p>
           </StackItem>
+
           <StackItem
             stackImgSrc={`${process.env.PUBLIC_URL}/images/cssIcon.png`}
           >
             <p>css</p>
           </StackItem>
+
           <StackItem
             stackImgSrc={`${process.env.PUBLIC_URL}/images/jsIcon.png`}
           >
             <p>JavaScript</p>
           </StackItem>
+
           <StackItem
             stackImgSrc={`${process.env.PUBLIC_URL}/images/cssIcon.png`}
           >
             <p>css</p>
           </StackItem>
+
           <StackItem
             stackImgSrc={`${process.env.PUBLIC_URL}/images/jsIcon.png`}
           >
@@ -96,33 +139,6 @@ const ItemWrapper = styled.li`
   }
 `;
 
-// const FigureWrapper = styled.div`
-//   display: grid;
-//   place-content: center;
-//   width: fit-content;
-//   isolation: isolate;
-
-//   & > * {
-//     grid-column: 1 / -1;
-//     grid-row: 1 / -1;
-//   }
-// `;
-
-// const Overlay = styled.div`
-//   background: linear-gradient(
-//     to right,
-//     rgb(0 0 0 / 0.52),
-//     rgb(0 0 0 / 0.3),
-//     rgb(0 0 0 / 0.2),
-//     rgb(0 0 0 / 0.6)
-//   );
-// `;
-
-// const FigureContainer = styled.div`
-//   position: relative;
-//   display: inline-block;
-// `;
-
 const ProjectDetailsWrapper = styled.div``;
 
 const Name = styled.h3`
@@ -149,4 +165,22 @@ const Stacks = styled.div`
   font-size: 1rem;
 `;
 
-// const FigStyle = styled(Figure)``;
+const Header = styled.button`
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  background: var(--gradient-primary);
+  width: fit-content;
+  display: grid;
+  place-content: center;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  @media (width <= 600px) {
+    top: 1rem;
+    right: 1rem;
+  }
+`;
+
+const ChildWrapper = styled.div``;
