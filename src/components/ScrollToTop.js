@@ -45,7 +45,7 @@ function ScrollToTop() {
           width="512"
           height="512"
         />
-        <figcaption class="sr-only"> arrow btn </figcaption>
+        <figcaption className="sr-only"> arrow btn </figcaption>
       </figure>
     </button>
   );

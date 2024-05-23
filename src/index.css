@@ -183,3 +183,7 @@ body {
   background-color: var(--primary-bg);
   font-family: var(--project-font), "Roboto", sans-serif;
 }
+
+.carousel.flickity-enabled {
+  display: block;
+}

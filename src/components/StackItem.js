@@ -1,10 +1,10 @@
 import styled from "styled-components";
 // import Figure from "./Figure";
 
-function StackItem({ children, stackImgSrc }) {
+function StackItem({ children, stackimgsrc }) {
   return (
-    <ItemWrapper stackImgSrc={stackImgSrc}>
-      <img src={stackImgSrc} width="24" height="24" alt="StackImage" />
+    <ItemWrapper stackimgsrc={stackimgsrc}>
+      <img src={stackimgsrc} width="24" height="24" alt="StackImage" />
       <ItemDescription>
         {children}
         <SpanDesc>

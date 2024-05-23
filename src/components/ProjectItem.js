@@ -6,6 +6,7 @@ import StackItem from "./StackItem";
 import ReactModal from "react-modal";
 import { X } from "react-feather";
 import VissuallyHidden from "./VissuallyHidden";
+import FlickityCarousel from "./FlickityCarousel";
 
 const overlay = {
   position: "fixed",
@@ -20,14 +21,23 @@ const overlay = {
 const content = {
   inset: "revert",
   position: "relative",
-  width: "70%",
-  backgroundColor: "white",
-  padding: "6rem",
-  borderRadius: "5px",
+  width: "85vw",
+  height: "60vh",
+  backgroundColor: "transparent",
+  padding: "1rem 0.3rem",
+  borderRadius: "20px",
   boxShadow: "0 3rem 5rem rgba(0, 0, 0, 0.3)",
+  overflow: "auto",
+  // display: "flex",
+  // alignItems: "center",
+  // justifyContent: "center",
+
+  // @media (width <= 37.5rem) {
+  //   width: "98%
+  // }
 };
 
-function ProjectItem({ children }) {
+function ProjectItem() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => setModalIsOpen(true);
@@ -52,11 +62,11 @@ function ProjectItem({ children }) {
           content,
         }}
       >
-        <Header>
-          <X onClick={closeModal} />
+        <Header onClick={closeModal}>
+          <X />
           <VissuallyHidden title="Close Modal" />
         </Header>
-        <ChildWrapper>{children}</ChildWrapper>
+        <FlickityCarousel />
       </ReactModal>
 
       <ProjectDetailsWrapper>
@@ -69,43 +79,43 @@ function ProjectItem({ children }) {
         <Hr />
         <Stacks>
           <StackItem
-            stackImgSrc={`${process.env.PUBLIC_URL}/images/htmlIcon.png`}
+            stackimgsrc={`${process.env.PUBLIC_URL}/images/htmlIcon.png`}
           >
             <p>html</p>
           </StackItem>
 
           <StackItem
-            stackImgSrc={`${process.env.PUBLIC_URL}/images/cssIcon.png`}
+            stackimgsrc={`${process.env.PUBLIC_URL}/images/cssIcon.png`}
           >
             <p>css</p>
           </StackItem>
 
           <StackItem
-            stackImgSrc={`${process.env.PUBLIC_URL}/images/htmlIcon.png`}
+            stackimgsrc={`${process.env.PUBLIC_URL}/images/htmlIcon.png`}
           >
             <p>html</p>
           </StackItem>
 
           <StackItem
-            stackImgSrc={`${process.env.PUBLIC_URL}/images/cssIcon.png`}
+            stackimgsrc={`${process.env.PUBLIC_URL}/images/cssIcon.png`}
           >
             <p>css</p>
           </StackItem>
 
           <StackItem
-            stackImgSrc={`${process.env.PUBLIC_URL}/images/jsIcon.png`}
+            stackimgsrc={`${process.env.PUBLIC_URL}/images/jsIcon.png`}
           >
             <p>JavaScript</p>
           </StackItem>
 
           <StackItem
-            stackImgSrc={`${process.env.PUBLIC_URL}/images/cssIcon.png`}
+            stackimgsrc={`${process.env.PUBLIC_URL}/images/cssIcon.png`}
           >
             <p>css</p>
           </StackItem>
 
           <StackItem
-            stackImgSrc={`${process.env.PUBLIC_URL}/images/jsIcon.png`}
+            stackimgsrc={`${process.env.PUBLIC_URL}/images/jsIcon.png`}
           >
             <p>JavaScript</p>
           </StackItem>
@@ -134,7 +144,7 @@ const ItemWrapper = styled.li`
     font-size: clamp(0.7rem, 1vw + 0.5rem, 1rem);
   }
 
-  @media (width <= 600px) {
+  @media (width <= 37.5rem) {
     border-top-right-radius: 0.5rem;
   }
 `;
@@ -145,7 +155,7 @@ const Name = styled.h3`
   margin: 0.8rem 0;
   color: #375375;
 
-  @media (width <= 600px) {
+  @media (width <= 37.5rem) {
     margin-top: 3.5rem;
   }
 `;
@@ -167,8 +177,8 @@ const Stacks = styled.div`
 
 const Header = styled.button`
   position: absolute;
-  top: 2rem;
-  right: 3rem;
+  top: 1rem;
+  right: 1rem;
   background: var(--gradient-primary);
   width: fit-content;
   display: grid;
@@ -176,11 +186,13 @@ const Header = styled.button`
   padding: 8px;
   border-radius: 50%;
   cursor: pointer;
+  z-index: 2;
 
-  @media (width <= 600px) {
-    top: 1rem;
-    right: 1rem;
+  @media (width <= 37.5rem) {
+    top: 0.4rem;
+    right: 0.4rem;
+    padding: 7px;
   }
 `;
 
-const ChildWrapper = styled.div``;
+// const ChildWrapper = styled.div``;
