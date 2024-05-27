@@ -117,7 +117,7 @@ const Button = styled.button`
   }
 
   &:active {
-    scale: 0.98;
+    scale: 0.996;
   }
 
   .circle {

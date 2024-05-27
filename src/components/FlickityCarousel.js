@@ -17,8 +17,6 @@ const Carousel = () => {
       imagesLoaded: true,
       percentPosition: false,
       pageDots: false,
-      selectedAttraction: 0.03,
-      friction: 0.15,
     });
 
     const imgs = document.querySelectorAll(".carousel-cell img");

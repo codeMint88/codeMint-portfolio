@@ -43,7 +43,7 @@
 .btnContainer > * {
   grid-column: 1 / -1;
   grid-row: 1 / -1;
-  transform: translateX(0.4rem);
+  transform: translateX(0.15rem);
 }
 
 .btnBackground {

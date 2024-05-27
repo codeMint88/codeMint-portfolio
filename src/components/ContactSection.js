@@ -4,7 +4,7 @@ import TitleUnderline from "./TitleUnderline";
 import Form from "./Form";
 function ContactSection() {
   return (
-    <div id="Contact" className={` container ${styles.contactContainer}`}>
+    <section id="Contact" className={` container ${styles.contactContainer}`}>
       <TitleUnderline title="Get In Touch" />
       <div className={styles.contactSection}>
         <div className={styles.leftContainer}>
@@ -37,7 +37,7 @@ function ContactSection() {
           <Form />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

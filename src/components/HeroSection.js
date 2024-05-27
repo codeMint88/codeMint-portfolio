@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 function HeroSection() {
   return (
-    <section className={`container ${styles.heroSection}`}>
+    <section id="Home" className={`container ${styles.heroSection}`}>
       <div className={`${styles.heroLeft} ${styles.gritItem}`}>
         <TitleUnderline title="Welcome to my Coding Playground!" />
         <TypingAnimation text="I'm the architect behind those captivating user interfaces that breathe life into your ideas, and I'm the code maestro crafting robust server-side logic that powers your digital dreams. It's like combining the creativity of an artist with the precision of a mathematician." />

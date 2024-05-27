@@ -7,7 +7,7 @@ const numOfProject = [1, 2, 3];
 function ProjectSection() {
   return (
     <div className="container">
-      <ProjectSecWrapper>
+      <ProjectSecWrapper id="Projects">
         <TitleUnderline title="Completed Projects" />
         <ProjectItemWrapper>
           {numOfProject.map((index) => (
@@ -21,8 +21,9 @@ function ProjectSection() {
 
 export default ProjectSection;
 
-const ProjectSecWrapper = styled.ul`
-  margin-top: 2rem;
+const ProjectSecWrapper = styled.section`
+  margin: 2rem 0 3rem;
+  scroll-margin-top: 2rem;
 `;
 
 const ProjectItemWrapper = styled.div`

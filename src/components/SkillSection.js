@@ -5,9 +5,9 @@ import TitleUnderline from "./TitleUnderline";
 
 function SkillSection() {
   return (
-    <div className={`container`}>
+    <section id="Skills" className={`container ${styles.skillContainer}`}>
       <TitleUnderline title="Tech Stack and Experience" />
-      <div id="Skills" className={styles.skillSectionContainer}>
+      <div className={styles.skillSectionContainer}>
         <div className={styles.leftContainer}>
           <article className={styles.article}>
             <ELearning className={styles.icon} />
@@ -155,7 +155,7 @@ function SkillSection() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
