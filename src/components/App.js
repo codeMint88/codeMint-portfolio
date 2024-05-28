@@ -1,18 +1,25 @@
-import ContactSection from "./ContactSection";
+import { lazy, Suspense } from "react";
+
 import FooterSection from "./FooterSection";
-import HeroSection from "./HeroSection";
 import Logo from "./Logo";
 import Main from "./Main";
 import Nav from "./Nav";
 import NavFixed from "./NavFixed";
 import NavPicture from "./NavPicture";
 import Parallex from "./Parallex";
-import ProjectSection from "./ProjectSection";
-import SkillSection from "./SkillSection";
+import Loader from "./Loader";
+
+const HeroSection = lazy(() => import("./HeroSection"));
+const SkillSection = lazy(() => import("./SkillSection"));
+const ProjectSection = lazy(() => import("./ProjectSection"));
+const ContactSection = lazy(() => import("./ContactSection"));
+// import SkillSection from "./SkillSection";
+// import ProjectSection from "./ProjectSection";
+// import ContactSection from "./ContactSection";
 
 function App() {
   return (
-    <>
+    <Suspense fallback={<Loader />}>
       <Nav>
         <Logo />
         <NavPicture
@@ -34,7 +41,7 @@ function App() {
         <FooterSection />
       </Main>
       <NavFixed />
-    </>
+    </Suspense>
   );
 }
 

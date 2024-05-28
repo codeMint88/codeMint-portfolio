@@ -32,6 +32,25 @@
   --border: 2px solid red;
 }
 
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-bg: #efe0f7;
+    --colour-purple: #5b0c8c;
+    --colour-green: #428a4a;
+    --color-black1: #40514E;
+    --green-gray-bg: #BCD4BD;
+    --green-gray: #d6e4d7;
+    --gradient-primary: linear-gradient(to top left, rgb(57, 179, 133), rgb(155, 225, 93));
+    --gradient-secondary: linear-gradient(to top left, #9765a4, rgb(242, 107, 77));
+
+    --project1-bg: #d6e4d7;
+    --project1-ripplebtn-col: #00d3b6;
+    --project1-hr: #BCD4BD;
+    --footer-Icon: linear-gradient(to right, #212121, #3e3e3e);
+  }
+}
+
 html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
