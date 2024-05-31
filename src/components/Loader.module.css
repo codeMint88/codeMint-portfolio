@@ -9,9 +9,9 @@
 /* The loader container */
 
 .loader {
-  width: 18rem;
-  height: 18rem;
-  perspective: 18rem
+  width: 200px;
+  height: 200px;
+  perspective: 200px
 }
 
 

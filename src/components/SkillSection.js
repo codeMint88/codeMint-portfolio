@@ -20,7 +20,7 @@ function SkillSection() {
           <article className={styles.article}>
             <CheckMarkRectangle className={styles.icon} />
             <div>
-              <p>4+ Completed</p>
+              <p>2+ Completed</p>
               <h5>Projects</h5>
             </div>
           </article>
@@ -35,7 +35,7 @@ function SkillSection() {
                 </div>
                 <div>
                   <h5>HTML</h5>
-                  <small>Experienced</small>
+                  <small>Proficient</small>
                 </div>
               </div>
               <div className={styles.rightDetailsContainer}>
@@ -44,7 +44,7 @@ function SkillSection() {
                 </div>
                 <div>
                   <h5>CSS</h5>
-                  <small>Experienced</small>
+                  <small>Proficient</small>
                 </div>
               </div>
               <div className={styles.rightDetailsContainer}>
@@ -53,7 +53,7 @@ function SkillSection() {
                 </div>
                 <div>
                   <h5>JavaScript</h5>
-                  <small>Experienced</small>
+                  <small>Proficient</small>
                 </div>
               </div>
               <div className={styles.rightDetailsContainer}>
@@ -62,7 +62,7 @@ function SkillSection() {
                 </div>
                 <div>
                   <h5>TypeScript</h5>
-                  <small>Experienced</small>
+                  <small>Fundamentals</small>
                 </div>
               </div>
               <div className={styles.rightDetailsContainer}>
@@ -80,7 +80,7 @@ function SkillSection() {
                 </div>
                 <div>
                   <h5>React</h5>
-                  <small>Experienced</small>
+                  <small>Proficient</small>
                 </div>
               </div>
               <div className={styles.rightDetailsContainer}>
@@ -89,7 +89,7 @@ function SkillSection() {
                 </div>
                 <div>
                   <h5>Next.js</h5>
-                  <small>Experienced</small>
+                  <small>Fundamentals</small>
                 </div>
               </div>
             </div>
@@ -103,7 +103,7 @@ function SkillSection() {
                 </div>
                 <div>
                   <h5>Node Js</h5>
-                  <small>Experienced</small>
+                  <small>Proficient</small>
                 </div>
               </div>
               <div className={styles.rightDetailsContainer}>
@@ -112,7 +112,7 @@ function SkillSection() {
                 </div>
                 <div>
                   <h5>Ejs</h5>
-                  <small>Experienced</small>
+                  <small>Proficient</small>
                 </div>
               </div>
               <div className={styles.rightDetailsContainer}>
@@ -121,7 +121,7 @@ function SkillSection() {
                 </div>
                 <div>
                   <h5>Mongo DB</h5>
-                  <small>Experienced</small>
+                  <small>Proficient</small>
                 </div>
               </div>
               <div className={styles.rightDetailsContainer}>
@@ -129,8 +129,8 @@ function SkillSection() {
                   <ArchiveAdd className={styles.rightContainerIcon} />
                 </div>
                 <div>
-                  <h5>Superbase</h5>
-                  <small>Experienced</small>
+                  <h5>Supabase</h5>
+                  <small>Proficient</small>
                 </div>
               </div>
               <div className={styles.rightDetailsContainer}>
@@ -148,7 +148,7 @@ function SkillSection() {
                 </div>
                 <div>
                   <h5>AWS</h5>
-                  <small>Experienced</small>
+                  <small>Fundamentals</small>
                 </div>
               </div>
             </div>

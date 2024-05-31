@@ -1,17 +1,18 @@
 import styled from "styled-components";
 import ProjectItem from "./ProjectItem";
 import TitleUnderline from "./TitleUnderline";
-
-const numOfProject = [1, 2, 3];
+import { useProject } from "../contexts/ProjectsContexts";
 
 function ProjectSection() {
+  const { projects } = useProject();
+
   return (
     <div className="container">
       <ProjectSecWrapper id="Projects">
         <TitleUnderline title="Completed Projects" />
         <ProjectItemWrapper>
-          {numOfProject.map((index) => (
-            <ProjectItem key={index} />
+          {projects.map((project) => (
+            <ProjectItem project={project} key={project.title} />
           ))}
         </ProjectItemWrapper>
       </ProjectSecWrapper>

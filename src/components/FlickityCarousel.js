@@ -2,16 +2,9 @@ import React, { useEffect } from "react";
 import Flickity from "flickity";
 import "flickity/css/flickity.css";
 import styled from "styled-components";
+import Figure from "./Figure";
 
-const images = [
-  { src: "images/Project_Preview_Image.jpg" },
-  { src: "images/Project_Preview_Image.jpg" },
-  { src: "images/Project_Preview_Image.jpg" },
-  { src: "images/Project_Preview_Image.jpg" },
-  { src: "images/Project_Preview_Image.jpg" },
-];
-
-const Carousel = () => {
+function Carousel({ pictures }) {
   useEffect(() => {
     const carousel = new Flickity(".carousel", {
       imagesLoaded: true,
@@ -41,15 +34,23 @@ const Carousel = () => {
     <>
       {/* <h1>Flickity - keyhole parallax</h1> */}
       <CarouselWrapper className="carousel">
-        {images.map((image, index) => (
-          <CarouselCell className="carousel-cell" key={index}>
-            <Image src={`${process.env.PUBLIC_URL}/${image.src}`} alt="" />
+        {pictures.map((picture) => (
+          <CarouselCell className="carousel-cell" key={picture.src}>
+            {/* <Image src={`${process.env.PUBLIC_URL}/${image.src}`} alt="" /> */}
+            <Figure
+              src={picture.src}
+              srcSet={picture.srcSet}
+              caption={picture.caption}
+              alt={picture.alt}
+              width={picture.width}
+              height={picture.height}
+            />
           </CarouselCell>
         ))}
       </CarouselWrapper>
     </>
   );
-};
+}
 
 export default Carousel;
 
@@ -66,12 +67,12 @@ const CarouselCell = styled.div`
   height: 100%;
 `;
 
-const Image = styled.img`
-  width: 400px;
-  height: 100%;
+// const Image = styled.img`
+//   width: 400px;
+//   height: 100%;
 
-  object-fit: cover;
-  object-position: top;
-  aspect-ratio: 3/4;
-  border-radius: 10px;
-`;
+//   object-fit: cover;
+//   object-position: top;
+//   aspect-ratio: 3/4;
+//   border-radius: 10px;
+// `;

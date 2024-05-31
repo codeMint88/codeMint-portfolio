@@ -1,0 +1,151 @@
+{
+  "projects" : [ 
+    {
+      "title" : "Wilson College", 
+      "description" : "In this project, I developed a comprehensive academic multi-page website. The backend is powered by scalable and secure RESTful APIs built using Express.js. I utilized MongoDB to store and manipulate data, ensuring efficient data retrieval and updates. For the front-end, I employed EJS for server-side rendering, dynamically rendering course data on the website.",
+      "notes" : "There may be a slight delay the first time you access this site. If the site does not load within 45 seconds, please refresh the page.",
+      "stacks" : [ "html", "css", "javascript", "node", "express", "mongodb", "ejs"],
+      "liveDemo": "https://wilson-college.onrender.com/",
+      "pictures" : [
+        {
+          "src": "images/Project2_Preview_Image_1.jpg",
+          "srcSet": "images/Project2_Preview_Image_1.avif",
+          "caption": "Project 2 Preview Image",
+          "alt": "Preview Image",
+          "width": "500",
+          "height": "900"
+        },
+        {
+          "src": "images/Project2_Preview_Image_2.jpg",
+          "srcSet": "images/Project2_Preview_Image_2.avif",
+          "caption": "Project 2 Preview Image",
+          "alt": "Preview Image",
+          "width": "500",
+          "height": "900"
+        },
+        {
+          "src": "images/Project2_Preview_Image_3.jpg",
+          "srcSet": "images/Project2_Preview_Image_3.avif",
+          "caption": "Project 2 Preview Image",
+          "alt": "Preview Image",
+          "width": "500",
+          "height": "900"
+        },
+        {
+          "src": "images/Project2_Preview_Image_4.jpg",
+          "srcSet": "images/Project2_Preview_Image_4.avif",
+          "caption": "Project 2 Preview Image",
+          "alt": "Preview Image",
+          "width": "500",
+          "height": "900"
+        },
+        {
+          "src": "images/Project2_Preview_Image_5.jpg",
+          "srcSet": "images/Project2_Preview_Image_5.avif",
+          "caption": "Project 2 Preview Image",
+          "alt": "Preview Image",
+          "width": "500",
+          "height": "900"
+        }
+      ]
+    }, 
+    {
+      "title" : "Hackathon Challenge", 
+      "description" : "During a 5-day hackathon challenge, I developed an interactive website using HTML, CSS, and JavaScript. The project involved implementing various section animations to enhance user engagement and visual appeal. Additionally, I successfully integrated the website with a provided backend API, enabling users to submit forms and interact with the application.",
+      "notes" : "",
+      "stacks" : [ "html", "css", "javascript"],
+      "liveDemo" : "https://hackaton-challenge.onrender.com/",
+      "pictures" : [
+        {
+          "src": "images/Project3_Preview_Image_1.jpg",
+          "srcSet": "images/Project3_Preview_Image_1.avif",
+          "caption": "Project 3 Preview Image",
+          "alt": "Preview Image",
+          "width": "500",
+          "height": "900"
+        },
+        {
+          "src": "images/Project3_Preview_Image_2.jpg",
+          "srcSet": "images/Project3_Preview_Image_2.avif",
+          "caption": "Project 3 Preview Image",
+          "alt": "Preview Image",
+          "width": "500",
+          "height": "900"
+        },
+        {
+          "src": "images/Project3_Preview_Image_3.jpg",
+          "srcSet": "images/Project3_Preview_Image_3.avif",
+          "caption": "Project 3 Preview Image",
+          "alt": "Preview Image",
+          "width": "500",
+          "height": "900"
+        },
+        {
+          "src": "images/Project3_Preview_Image_4.jpg",
+          "srcSet": "images/Project3_Preview_Image_4.avif",
+          "caption": "Project 3 Preview Image",
+          "alt": "Preview Image",
+          "width": "500",
+          "height": "900"
+        },
+        {
+          "src": "images/Project3_Preview_Image_5.jpg",
+          "srcSet": "images/Project3_Preview_Image_5.avif",
+          "caption": "Project 3 Preview Image",
+          "alt": "Preview Image",
+          "width": "500",
+          "height": "900"
+        }
+      ]
+    }, 
+    {
+      "title" : "Scholarship Buffet", 
+      "description" : "I'm currently developing a scholarship information website leveraging the MERN stack, creating one of the world's largest and most comprehensive databases. My vision for this platform is to accommodate a vast user base while ensuring a top-notch user experience. The application is poised to offer robust features, allowing applicants to take notes of documents yet to be submitted, track the progress of their scholarship applications, bookmark scholarships of interest effortlessly, and receive automatic deadline notifications.",
+      "notes" : "In progress...",
+      "stacks" : [ "react", "mongodb", "css", "node", "express"],
+      "liveDemo": "",
+      "pictures" : [
+        {
+          "src": "images/Project1_Preview_Image_1.jpg",
+          "srcSet": "images/Project1_Preview_Image_1.avif",
+          "caption": "Project 3 Preview Image",
+          "alt": "Preview Image",
+          "width": "500",
+          "height": "900"
+        },
+        {
+          "src": "images/Project1_Preview_Image_2.jpg",
+          "srcSet": "images/Project1_Preview_Image_2.avif",
+          "caption": "Project 3 Preview Image",
+          "alt": "Preview Image",
+          "width": "500",
+          "height": "900"
+        },
+        {
+          "src": "images/Project1_Preview_Image_3.jpg",
+          "srcSet": "images/Project1_Preview_Image_3.avif",
+          "caption": "Project 3 Preview Image",
+          "alt": "Preview Image",
+          "width": "500",
+          "height": "900"
+        },
+        {
+          "src": "images/Project1_Preview_Image_4.jpg",
+          "srcSet": "images/Project1_Preview_Image_4.avif",
+          "caption": "Project 3 Preview Image",
+          "alt": "Preview Image",
+          "width": "500",
+          "height": "900"
+        },
+        {
+          "src": "images/Project1_Preview_Image_5.jpg",
+          "srcSet": "images/Project1_Preview_Image_5.avif",
+          "caption": "Project 3 Preview Image",
+          "alt": "Preview Image",
+          "width": "500",
+          "height": "900"
+        }
+      ]
+    }
+  ]
+}

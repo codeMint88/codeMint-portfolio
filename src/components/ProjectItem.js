@@ -1,6 +1,5 @@
 import { useState } from "react";
 import styled from "styled-components";
-// import Figure from "./Figure";
 import RippleButton from "./RippleButton";
 import StackItem from "./StackItem";
 import ReactModal from "react-modal";
@@ -37,7 +36,9 @@ const content = {
   // }
 };
 
-function ProjectItem() {
+function ProjectItem({ project }) {
+  const { title, description, liveDemo, notes, stacks, pictures } = project;
+
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => setModalIsOpen(true);
@@ -66,59 +67,34 @@ function ProjectItem() {
           <X />
           <VissuallyHidden title="Close Modal" />
         </Header>
-        <FlickityCarousel />
+        <FlickityCarousel pictures={pictures} />
       </ReactModal>
 
       <ProjectDetailsWrapper>
-        <Name>Hackathon Project</Name>
+        <Name>{title}</Name>
+
         <Description>
-          Small acts of compassion have the power to transform lives in profound
-          ways. A kind word, a helping hand, or a simple gesture of empathy can
-          uplift spirits, restore hope, and instill a sense of belonging.
+          {description}
+          {liveDemo && <a href={liveDemo}> Live Demo &#8599;</a>}
         </Description>
+
+        {notes && (
+          <Note>
+            Note:
+            <span> {notes} </span>
+          </Note>
+        )}
+
         <Hr />
         <Stacks>
-          <StackItem
-            stackimgsrc={`${process.env.PUBLIC_URL}/images/htmlIcon.png`}
-          >
-            <p>html</p>
-          </StackItem>
-
-          <StackItem
-            stackimgsrc={`${process.env.PUBLIC_URL}/images/cssIcon.png`}
-          >
-            <p>css</p>
-          </StackItem>
-
-          <StackItem
-            stackimgsrc={`${process.env.PUBLIC_URL}/images/htmlIcon.png`}
-          >
-            <p>html</p>
-          </StackItem>
-
-          <StackItem
-            stackimgsrc={`${process.env.PUBLIC_URL}/images/cssIcon.png`}
-          >
-            <p>css</p>
-          </StackItem>
-
-          <StackItem
-            stackimgsrc={`${process.env.PUBLIC_URL}/images/jsIcon.png`}
-          >
-            <p>JavaScript</p>
-          </StackItem>
-
-          <StackItem
-            stackimgsrc={`${process.env.PUBLIC_URL}/images/cssIcon.png`}
-          >
-            <p>css</p>
-          </StackItem>
-
-          <StackItem
-            stackimgsrc={`${process.env.PUBLIC_URL}/images/jsIcon.png`}
-          >
-            <p>JavaScript</p>
-          </StackItem>
+          {stacks.map((stack) => (
+            <StackItem
+              stackImgSrc={`${process.env.PUBLIC_URL}/images/${stack}Icon.png`}
+              key={stack}
+            >
+              <p>{stack}</p>
+            </StackItem>
+          ))}
         </Stacks>
       </ProjectDetailsWrapper>
     </ItemWrapper>
@@ -136,6 +112,7 @@ const ItemWrapper = styled.li`
   flex: 1 1 470px;
   max-width: 500px;
   background-color: var(--project1-bg);
+  align-self: center;
 
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
@@ -153,14 +130,37 @@ const ProjectDetailsWrapper = styled.div``;
 
 const Name = styled.h3`
   margin: 0.8rem 0;
-  color: #375375;
+  color: var(--project-item-h3-col);
 
   @media (width <= 37.5rem) {
     margin-top: 3.5rem;
   }
 `;
 
-const Description = styled.p``;
+const Description = styled.p`
+  a {
+    color: var(--project-item-h3-col);
+    transition: var(--transition);
+
+    &:hover {
+      color: var(--green-gray-bg);
+    }
+  }
+`;
+
+const Note = styled.div`
+  color: var(--orange-border-col);
+  margin-top: 1rem;
+  font-size: clamp(0.2rem, 1vw + 0.5rem, 0.75rem);
+
+  span {
+    color: var(--color-black1);
+  }
+
+  @media (width <= 37.5rem) {
+    font-size: 0.63rem;
+  }
+`;
 
 const Hr = styled.hr`
   margin: 1.3rem 0;

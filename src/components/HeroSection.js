@@ -16,7 +16,7 @@ function HeroSection() {
             whileTap={{ scale: 0.95, rotate: "2.5deg" }}
             transition={{ duration: 0.125, ease: "easeInOut" }}
             href="ThankGod N Enemuo CV.pdf"
-            download="myCV.pdf"
+            download="ThankGod_Enemuo_CV.pdf"
             target="_blank"
           >
             Download CV
@@ -25,7 +25,7 @@ function HeroSection() {
             whileTap={{ scale: 1.05 }}
             whileHover={{ scale: 0.95, rotate: "2.5deg" }}
             transition={{ duration: 0.125, ease: "easeInOut" }}
-            href="#contact"
+            href="#Contact"
           >
             Let's Talk
           </motion.a>

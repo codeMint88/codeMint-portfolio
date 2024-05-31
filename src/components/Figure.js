@@ -12,7 +12,9 @@ function Figure({
   return (
     <FigureWrapper>
       <Picture>
-        <Source srcSet={`${process.env.PUBLIC_URL}/${srcSet}`} type={type} />
+        {srcSet && (
+          <Source srcSet={`${process.env.PUBLIC_URL}/${srcSet}`} type={type} />
+        )}
         <Image
           src={`${process.env.PUBLIC_URL}/${src}`}
           alt={alt}
@@ -33,16 +35,13 @@ const FigureWrapper = styled.figure`
 const Picture = styled.picture``;
 const Source = styled.source``;
 const Image = styled.img`
+  width: 400px;
+  height: 100%;
+
   object-fit: cover;
   object-position: top;
-  width: 100%;
-  height: 100%;
-  ${"" /* aspect-ratio: 3/2; */}
-  ${
-    "" /* ${StackItem} & {
-    aspect-ratio: auto;
-    border: 2px solid blue;
-  } */
-  };
+  aspect-ratio: 3/4;
+  border-radius: 10px;
 `;
+
 const FigCaption = styled.figcaption``;
