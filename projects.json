@@ -4,7 +4,7 @@
       "title" : "Wilson College", 
       "description" : "In this project, I developed a comprehensive academic multi-page website. The backend is powered by scalable and secure RESTful APIs built using Express.js. I utilized MongoDB to store and manipulate data, ensuring efficient data retrieval and updates. For the front-end, I employed EJS for server-side rendering, dynamically rendering course data on the website.",
       "notes" : "There may be a slight delay the first time you access this site. If the site does not load within 45 seconds, please refresh the page.",
-      "stacks" : [ "html", "css", "javascript", "node", "express", "mongodb", "ejs"],
+      "stacks" : [ "html", "css", "ejs", "node", "express", "javascript", "mongodb"],
       "liveDemo": "https://wilson-college.onrender.com/",
       "pictures" : [
         {
