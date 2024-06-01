@@ -1,5 +1,4 @@
 .titleContainer {
-  /* border: var(--border);   */
   width: fit-content;
   isolation: isolate;
 }

@@ -23,10 +23,9 @@ const FooterIconContainer = styled.div`
   background: var(--footer-Icon);
   width: 50px;
   height: 50px;
-  ${"" /* padding: 10px; */}
   border-radius: 10px;
 
-  @media (width <= 600) {
+  @media (width <= 37.5rem) {
     width: 40px;
     height: 40px;
   }

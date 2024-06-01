@@ -6,7 +6,7 @@
   scroll-margin-top: 6rem;
 }
 
-@media (width <= 320px) {
+@media (width <= 20rem) {
   .nav {
     margin-top: 1rem;
   }

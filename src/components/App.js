@@ -14,9 +14,6 @@ const HeroSection = lazy(() => import("./HeroSection"));
 const SkillSection = lazy(() => import("./SkillSection"));
 const ProjectSection = lazy(() => import("./ProjectSection"));
 const ContactSection = lazy(() => import("./ContactSection"));
-// import SkillSection from "./SkillSection";
-// import ProjectSection from "./ProjectSection";
-// import ContactSection from "./ContactSection";
 
 function App() {
   return (

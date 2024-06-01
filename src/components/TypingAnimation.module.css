@@ -3,13 +3,13 @@
   width: fit-content;
 }
 
-@media screen and (width <=1080px) {
+@media (width <= 64rem) {
   .paragraph {
     height: clamp(6rem, 3vh, 5rem);
   }
 }
-@media screen and (width <= 600px) {
+@media (width <= 37.5rem) {
   .paragraph {
-    height: 6rem;
+    height: 5.5rem;
   }
 }

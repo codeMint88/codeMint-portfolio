@@ -85,7 +85,7 @@ const ButtonWrapper = styled.div`
   top: 0;
   right: 0%;
 
-  @media (width <= 600px) {
+  @media (width <= 37.5rem) {
     right: 50%;
     transform: translateX(50%);
   }
@@ -109,7 +109,6 @@ const Button = styled.button`
   svg {
     margin-right: 4px;
     vartical-align: middle;
-    ${"" /* margin-bottom: 0.2rem; */}
   }
 
   &:focus-visible {
@@ -130,7 +129,7 @@ const Button = styled.button`
     animation: ${scale} 0.5s ease-out;
   }
 
-  @media (width <= 600px) {
+  @media (width <= 37.5rem) {
     padding: 0.39rem 0.8rem;
   }
 `;

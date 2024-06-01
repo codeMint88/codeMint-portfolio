@@ -2,8 +2,12 @@ import styles from "./SkillSection.module.css";
 import { ELearning, CheckMarkRectangle } from "react-huge-icons/outline";
 import { ArchiveAdd } from "react-huge-icons/bulk";
 import TitleUnderline from "./TitleUnderline";
+import { useProject } from "../contexts/ProjectsContexts";
 
 function SkillSection() {
+  const { projects } = useProject();
+  const numOfCompletedProjects = projects.length;
+
   return (
     <section id="Skills" className={`container ${styles.skillContainer}`}>
       <TitleUnderline title="Tech Stack and Experience" />
@@ -20,7 +24,7 @@ function SkillSection() {
           <article className={styles.article}>
             <CheckMarkRectangle className={styles.icon} />
             <div>
-              <p>2+ Completed</p>
+              <p>{numOfCompletedProjects - 1}+ Completed</p>
               <h5>Projects</h5>
             </div>
           </article>

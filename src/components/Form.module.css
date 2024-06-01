@@ -24,7 +24,6 @@
   background-color: transparent;
   border: 1px solid var(--colour-green);
   border-radius: 8px;
-  /* outline: none; */
 }
 
 .formContainer input:focus,

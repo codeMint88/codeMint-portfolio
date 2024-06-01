@@ -75,7 +75,11 @@ function ProjectItem({ project }) {
 
         <Description>
           {description}
-          {liveDemo && <a href={liveDemo}> Live Demo &#8599;</a>}
+          {liveDemo && (
+            <a href={liveDemo} target="_blank" rel="noopener noreferrer">
+              Live Demo &#8599;
+            </a>
+          )}
         </Description>
 
         {notes && (

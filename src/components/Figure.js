@@ -32,7 +32,9 @@ export default Figure;
 const FigureWrapper = styled.figure`
   height: 100%;
 `;
-const Picture = styled.picture``;
+const Picture = styled.picture`
+  height: 100%;
+`;
 const Source = styled.source``;
 const Image = styled.img`
   width: 400px;
@@ -40,7 +42,7 @@ const Image = styled.img`
 
   object-fit: cover;
   object-position: top;
-  aspect-ratio: 3/4;
+  ${"" /* aspect-ratio: 3/4; */}
   border-radius: 10px;
 `;
 

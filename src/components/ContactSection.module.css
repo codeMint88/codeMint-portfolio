@@ -51,24 +51,14 @@
   font-size: clamp(0.6rem, 3vw, 0.85em);
 }
 
-
-
-/* inp {
-  padding: 1rem;
-  background-color: transparent;
-  border: 1px solid var(--colour-green);
-  border-radius: 5px;
-} */
-
-
-  @media (width <= 1080px) {
+  @media (width <= 64rem) {
   .contactSection {
     grid-template-columns: 35% 56%;
     gap: 9%;
   } 
 }
 
-@media (width <= 600px) {
+@media (width <= 37.5rem) {
   .contactSection {
     grid-template-columns: 1fr;
     gap: 0;
