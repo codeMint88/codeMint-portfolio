@@ -145,6 +145,7 @@ const Description = styled.p`
   a {
     color: var(--project-item-h3-col);
     transition: var(--transition);
+    margin-left: 0.3rem;
 
     &:hover {
       color: var(--green-gray-bg);

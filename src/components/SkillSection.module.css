@@ -149,7 +149,7 @@
   color: var(--colour-green);
 }
 
-@media (width <= 37.5rem) {
+@media (width <= 64rem) {
   .skillSectionContainer {
     flex-direction: column;
   }
