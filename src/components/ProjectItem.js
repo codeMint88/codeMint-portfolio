@@ -27,13 +27,6 @@ const content = {
   borderRadius: "20px",
   boxShadow: "0 3rem 5rem rgba(0, 0, 0, 0.3)",
   overflow: "auto",
-  // display: "flex",
-  // alignItems: "center",
-  // justifyContent: "center",
-
-  // @media (width <= 37.5rem) {
-  //   width: "98%
-  // }
 };
 
 function ProjectItem({ project }) {

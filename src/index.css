@@ -132,13 +132,13 @@ section {
   max-width: var(--container-width-lg);
 }
 
-@media (width < 64rem) {
+@media (width <= 64rem) {
   .container {
     max-width: var(--container-width-md)
   }
 }
 
-@media (width < 37.5rem) {
+@media (width <= 37.5rem) {
   .container {
     padding-inline: 1em;
     max-width: var(--container-width-sm)

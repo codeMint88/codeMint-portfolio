@@ -50,7 +50,7 @@
       ]
     }, 
     {
-      "title" : "Hackathon Challenge", 
+      "title" : "Hackathon 1.0", 
       "description" : "During a 5-day hackathon challenge, I developed an interactive website using HTML, CSS, and JavaScript. The project involved implementing various section animations to enhance user engagement and visual appeal. Additionally, I successfully integrated the website with a provided backend API, enabling users to submit forms and interact with the application.",
       "notes" : "",
       "stacks" : [ "html", "css", "javascript"],
